@@ -1,0 +1,107 @@
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <title>Gaming Zona</title>
+       <link rel="stylesheet" type="text/css" href="../style.css">
+       <link rel="icon" href="../images/favicon.ico">
+       <script src="sliderRoot.js"></script> 
+    </head>
+
+    <body onload="blink(); changeImgR();">
+         <div id="navbg" class="fade">
+          <img name="slide">
+         </div> 
+    
+         <div id="nav"> 
+           <img class="logo" src="../images/GamingZonaLogo.png" title="GamingZona">
+            <ul>
+                <li><a href="../index.html">Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="#">Nalog</a> 
+                   <div class="padajuciMeni">
+                     <a href="#login">Uloguj se</a>
+                     <a href="#registracija">Registracija</a>
+                   </div>
+                </li>
+                <li><a href="market.html">Market</a></li>   
+                <li><a href="kontakt.html">Kontakt</a></li> 
+            </ul>
+            <input type="text" placeholder="Pretraga...">
+            <div id="datum" class="datum"></div>
+            <div id="vreme" class="vreme"></div>
+            <script src = "time_dat.js"></script>        
+         </div>
+       
+         </div>
+       
+     <div id="container_nalog">
+     	<h1>Nalog</h1>
+      <div class="content1_n">
+      <h2 id="login">Uloguj se</h2>
+
+      <form name= "loginForma">
+      	<img src="../images/default_avatar.jpg">
+         <p>Nick:</p>
+         <input type="text" name="nickLogIn" placeholder="username/nick"><span>*</span>
+         <p>Šifra:</p>
+         <input type="password" name="passwordLogIn" placeholder="sifra"><span>*</span><br>
+         <input type="submit" value="LogIn" onclick="return provera_L()">
+         <input type="reset" value="Resetuj">
+    </form>
+      </div>
+      <div class="content2_n">
+      	 <h2 id="registracija">Registruj se</h2>
+      	 <form name="regForma">
+      	 <p>Nick:</p>
+         <input type="text" name="nick" placeholder="unesite nick"><span>*</span><br>
+         <p>Ime:</p>
+         <input type="text" name="ime" placeholder="unesite ime"><span>*</span>
+         <p>Prezime:</p>
+         <input type="text" name="prezime" placeholder="unesite prezime"><span>*</span>
+         <p>E-mail adresa:</p>
+         <input type="email" name="email" placeholder="unesite email"><span>*</span>
+         <p>Šifra:</p>
+         <input type="password" name="password" placeholder="unesite sifru"><span>*</span>
+         <p>Potvrdi šifru:</p>
+         <input type="password" name="password2" placeholder="potvrdite sifru"><span>*</span><br>
+         <p>Država:</p>
+         <select>
+         	<option selected>Not set</option>
+         	<option>Srbija</option>
+         	<option>Hrvatska</option>
+         	<option>BIH</option>
+         	<option>CrnaGora</option>
+         	<option>Makedonija</option>
+         	<option>Slovenija</option>
+         </select>
+         <p>Pol:</p>
+         <input type="radio" name="pol" value = "M" checked>muški
+         <input type="radio" name="pol" value = "Z">ženski<br>
+         <input type="submit" value="Register" onclick="return provera()">
+         <input type="reset" value="Resetuj">
+      	 </form>
+      </div>
+      <script src="nalog.js"></script>
+      
+      <div class="content_logo" id="gzAnime">
+       GamingZona    
+      </div>
+      <script src="textAnimation.js"></script>
+     </div>
+
+     <div id="footer">     
+      <div class="middle">
+        <p>GamingZona &copy;2019 Sva prava zadržana.</p>
+      </div>  
+      <div class="contact">   
+        <ul>
+          <li>E-mail:gamingzona@gz.com</li> 
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="../images/fb-logo.png">&nbsp;Facebook</a></li>
+            <li><a href="https://twitter.com/" target="_blank"><img src="../images/tweeter-logo.jpg">&nbsp;Twitter</a></li>
+        </ul>
+      </div>
+     </div>
+
+  </body>
+
+</html>

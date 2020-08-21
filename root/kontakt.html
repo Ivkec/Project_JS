@@ -1,0 +1,80 @@
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <title>Gaming Zona</title>
+       <link rel="stylesheet" type="text/css" href="../style.css">
+       <link rel="icon" href="../images/favicon.ico">
+       <script src="sliderRoot.js"></script>  
+    </head>
+
+    <body onload="blink(); changeImgR();">
+         <div id="navbg" class="fade">
+          <img name="slide">
+         </div> 
+    
+         <div id="nav"> 
+           <img class="logo" src="../images/GamingZonaLogo.png" title="GamingZona">
+            <ul>
+                <li><a href="../index.html">Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="nalog.html">Nalog</a> 
+                   <div class="padajuciMeni">
+                     <a href="nalog.html#login">Uloguj se</a>
+                     <a href="nalog.html#registracija">Registracija</a>
+                   </div>
+                </li>
+                <li><a href="market.html">Market</a></li>   
+                <li><a href="#">Kontakt</a></li> 
+            </ul>
+            <input type="text" placeholder="Pretraga...">
+            <div id="datum" class="datum"></div>
+            <div id="vreme" class="vreme"></div>
+            <script src = "time_dat.js"></script>        
+         </div>
+       
+     <div id="container_kontakt">
+      <div class="content1_k">
+      <h1>Kontakt</h1>
+      <form name="kontaktForma">
+         <p>Ime:</p>
+         <input type="text" placeholder="unesite ime" name="ime" ><span id="ime">*</span>
+         <p>Prezme:</p>
+         <input type="text" placeholder="unesite prezime" name="prezime"><span>*</span>
+         <p>Telefon:</p>
+         <input type="text" placeholder="unesite broj telefona" name="telefon"><span>*</span>
+         <p>E-mail:</p>
+         <input type="email" placeholder="adresa@xx.com" name="email"><span>*</span>
+         <p>Poruka:</p>
+         <textarea name ="poruka"></textarea><span>*</span><br>
+         <input type="submit" value="Pošalji" onclick="return validnost()">
+         <input type="reset" value="Poništi">
+    </form>
+      </div>
+      
+      <script src="kontakt.js"></script>
+
+      <div class="content2_k">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.966559667979!2d19.83467331509131!3d45.24846897909906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b103b5918c49d%3A0x51ffe9578fe801aa!2sGame+Centar!5e0!3m2!1ssk!2srs!4v1546100256001" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="content_logo" id="gzAnime">
+       GamingZona    
+      </div>
+      <script src="textAnimation.js"></script>
+     </div>
+
+     <div id="footer">     
+      <div class="middle">
+        <p>GamingZona &copy;2019 Sva prava zadržana.</p>
+      </div>  
+      <div class="contact">   
+        <ul>
+          <li>E-mail:gamingzona@gz.com</li> 
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="../images/fb-logo.png">&nbsp;Facebook</a></li>
+            <li><a href="https://twitter.com/" target="_blank"><img src="../images/tweeter-logo.jpg">&nbsp;Twitter</a></li>
+        </ul>
+      </div>
+     </div>
+
+  </body>
+
+</html>

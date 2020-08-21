@@ -1,0 +1,151 @@
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <title>Gaming Zona</title>
+       <link rel="stylesheet" type="text/css" href="../style.css">
+       <link rel="icon" href="../images/favicon.ico">
+       <script src="sliderRoot.js"></script> 
+    </head>
+
+    <body onload="blink(); changeImgR();">
+         <div id="navbg" class="fade">
+          <img name="slide">
+         </div> 
+    
+         <div id="nav"> 
+           <img class="logo" src="../images/GamingZonaLogo.png" title="GamingZona">
+            <ul>
+                <li><a href="../index.html">Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="nalog.html">Nalog</a> 
+                   <div class="padajuciMeni">
+                     <a href="nalog.html#login">Uloguj se</a>
+                     <a href="nalog.html#registracija">Registracija</a>
+                   </div>
+                </li>
+                <li><a href="#">Market</a></li>   
+                <li><a href="kontakt.html">Kontakt</a></li> 
+            </ul>
+            <div id="datum" class="datum"></div>
+            <div id="vreme" class="vreme"></div>
+            <button id="reset_cart" class="reset_cart" onclick="resetCart()">Ukloni</button>
+            <div id="korpa" class="korpa" onclick="shoppingInfo()">
+              <img src="../images/shopping-cart-black-shape.png" class="shoppingCartImg">
+              Korpa: quantity:<span id="kolicina">0</span>
+              price:<span id="ukupno">0</span><em>RSD</em>
+            </div>
+
+            <script src = "time_dat.js"></script>        
+         </div>
+       
+         </div>
+       
+     <div id="container_market">
+      <h1>Market</h1>
+    
+      <div class="content1_m">
+        <div class="articleM">
+          <img src="../images/tropico-6-el-prez-edition-beta-access-cover.jpg">
+          <h3>Tropico 6</h3>
+          <p>The exclusive palace design contains the captivating flamingo pond, something every dictator craves to impress his neighbouring states and a tourist costume for El Prez to enjoy those warm caribbean nights adequately. You can also treat your ears to the digital soundtrack, featuring the game's unique and catchy musical score.</p><br>
+          <span>CENA:<input type="text"  id="cena1" value="2815 RSD" disabled>-65%</span><br>
+          <input type="submit" value="Kupuj" name="tropico" onclick="dodajKol(0)">
+          </div>
+
+          <div class="articleM">
+          <img src="../images/call-of-duty-black-ops-4-cover.jpg">
+          <h3>COD Black Ops 4</h3>
+          <p>Call of Duty: Black Ops 4 offre l’expérience multijoueur la plus riche et tactique de l’histoire de Black Ops, le mode Zombies le plus ambitieuxles environnements, les armes et les équipements les plus emblématiques série Black Ops dans une expérience unique mêlant affrontements et survie.</p><br>
+          <span>CENA:<input type="text"  id="cena2" value="3832 RSD" disabled>-47%</span><br>
+          <input type="submit" value="Kupuj" name="CoD" onclick="dodajKol(1)">
+          </div>
+
+          <div class="articleM">
+          <img src="../images/euro-truck-simulator-2-gold-edition-cover.jpg">
+          <h3>Euro Truck 2</h3>
+          <p>Euro Truck Simulator 2 nous invite non seulement à conduire d'énormes camions dans toute l'Europe mais aussi à fonder notre propre entreprise de transport sur PC. En acceptant diverses missions de livraison, le joueur gagnera de l'argent qu'il pourra investir pour améliorer ses véhicules, embaucher des employés ou aggrandir son affaire. </p><br>
+          <span>CENA:<input type="text"  id="cena3" value="1415 RSD" disabled>-80%</span><br>
+          <input type="submit" value="Kupuj" name="ETS2" onclick="dodajKol(2)">
+          </div>
+
+          <div class="articleM">
+          <img src="../images/rocket-league-cover.jpg">
+          <h3>Rocket Leauge</h3>
+          <p>Installez-vous au volant d'un engin fracassant et de haute volée à propulsion-fusée et pilotez dans l'arène Rocket League pour le dernier sport en date, le plus rapide et dopé à l'adrénaline qui soit, à atterrir sur PlayStation 4.Choisissez parmi un vaste choix de véhicules à conduire et personnaliser dans cette. </p><br>
+          <span>CENA:<input type="text"  id="cena4" value="980 RSD" disabled>-58%</span><br>
+          <input type="submit" value="Kupuj" name="RLeague" onclick="dodajKol(3)">
+          </div>
+
+          <div class="articleM">
+          <img src="../images/battlefield-5-cover.jpg">
+          <h3>Battlefield 5</h3>
+          <p>Participez au plus grand conflit de l'Histoire avec Battlefield V. La licence revient aux sources et dépeint la Seconde Guerre mondiale comme jamais auparavant. Livrez des batailles multijoueur frénétiques et brutales aux côtés de votre escouade dans des modes imposants comme Grandes opérations et coopératifs comme Tir Groupé.</p><br>
+          <span>CENA:<input type="text"  id="cena5" value="3317 RSD" disabled>-73%</span><br>
+          <input type="submit" value="Kupuj" name="Bat5" onclick="dodajKol(4)">
+          </div>
+
+          <div class="articleM">
+          <img src="../images/fallout-76-cover.jpg">
+          <h3>Fallout 76</h3>
+          <p>Bethesda Game Studios, créateurs maintes fois récompensés de Skyrim et Fallout 4, vous souhaitent la bienvenue dans Fallout 76, le prequel en ligne où tous les humains survivants sont de vraies personnes. Pour survivre, travaillez ensemble. Ou pas.</p><br>
+          <span>CENA:<input type="text"  id="cena6" value="4557 RSD" disabled>-25%</span><br>
+          <input type="submit" value="Kupuj" name="F76" onclick="dodajKol(5)">                  
+          </div>
+
+          <div class="articleM">
+          <img src="../images/grand-theft-auto-v-cover.jpg">
+          <h3>GTA V</h3>
+          <p>Grand Theft Auto V pour PC exploitera pleinement les capacités des PC pour intégrer de nombreuses améliorations : résolution supérieure, graphismes plus détaillés, trafic plus dense, profondeur de champ accrue, IA améliorée, nouveaux animaux, effets climatiques et animations de dégâts avancées pour une expérience de jeu vraiment exceptionnelle.</p><br>
+          <input type="text"  id="cena7" value="0 RSD" disabled><span>RASPRODATO!</span><br>
+          <input type="submit" value="Kupuj" id ="cena7" disabled name="GTA5" onclick="dodajKol(6)">
+          </div>
+
+          <div class="articleM">
+          <img src="../images/playerunknowns-battlegrounds-cover.jpg">
+          <h3>PUBG</h3>
+          <p>PLAYERUNKNOWN, aka Brendan Greene, is a pioneer of the battle royale genre and the creator of the battle royale game modes in the ARMA series and H1Z1: King of the Kill. At PUBG Corp., Greene is working with a veteran team of developers to make PUBG into the world's premiere battle royale experience.</p><br>
+          <span>CENA:<input type="text"  id="cena8" value="2680 RSD" disabled>-20%</span><br>
+          <input type="submit" value="Kupuj" name="PUBG" onclick="dodajKol(7)">
+          </div>
+
+          <div class="articleM">
+          <img src="../images/doom-cover.jpg">
+          <h3>DOOM</h3>
+          <p>Développé par id Software, le pionnier des jeux de tir à la première personne et du mode match à mort multijoueur, DOOM revient sous une forme moderne qui conserve sa difficulté et sa brutalité. Que vous décidiez d'éradiquer des hordes de démons sorties tout droit de l'Enfer dans la campagne du jeu ou que vous combattiez vos amis dans l'un des multiples.</p><br>
+          <input type="text"  id="cena9" value="0 RSD" disabled><span>RASPRODATO!</span><br>
+          <input type="submit" value="Kupuj" disabled id= "cena9" name="DOOM" onclick="dodajKol(8)">
+          </div>
+
+          <div class="articleM">
+          <img src="../images/ride-3-cover.jpg">
+          <h3>Ride 3</h3>
+          <p>Ressentez l'adrénaline et vivez l'expérience de course la plus complète grâce à RIDE 3 !
+          Immergez-vous dans un environnement 3D moderne où vous ne ferez plus qu'un avec votre moto. Vous pourrez la modifier mécaniquement et esthétiquement grâce au nouvel Éditeur de livrée qui vous permettra de réaliser vos rêves les plus fous. </p><br>
+          <span>CENA:<input type="text"  id="cena10" value="1999 RSD" disabled>-70%</span>
+          <input type="submit" value="Kupuj" name="Ride3" onclick="dodajKol(9)">
+          </div>
+       </div>
+       <script src="shoppingCart.js"></script>
+
+         <div class="content_logo" id="gzAnime">
+          GamingZona    
+         </div>
+         <script src="textAnimation.js"></script>
+     </div>
+
+     <div id="footer">     
+      <div class="middle">
+        <p>GamingZona &copy;2019 Sva prava zadržana.</p>
+      </div>  
+      <div class="contact">   
+        <ul>
+          <li>E-mail:gamingzona@gz.com</li> 
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="../images/fb-logo.png">&nbsp;Facebook</a></li>
+            <li><a href="https://twitter.com/" target="_blank"><img src="../images/tweeter-logo.jpg">&nbsp;Twitter</a></li>
+        </ul>
+      </div>
+     </div>
+
+  </body>
+
+</html>
